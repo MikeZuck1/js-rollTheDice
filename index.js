@@ -1,0 +1,17 @@
+// Import stylesheets
+import './style.css';
+
+// Write Javascript code!
+const appDiv = document.getElementById('app');
+appDiv.innerHTML; 
+
+
+const rollTheDice = () => {
+  // Math.random() gives us a random number from 0 up to, but not including, 1
+  // We multiplied that by 6 to get a number between 0 and up to, but not including, 6 
+    let die1 = Math.floor(Math.random() * 6 + 1); 
+    let die2 = Math.floor(Math.random() * 6 + 1); 
+    return die1 + die2
+}; 
+
+console.log(rollTheDice()); 
